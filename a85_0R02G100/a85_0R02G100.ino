@@ -3,12 +3,12 @@
 #include <TinyLiquidCrystal.h>
 
 // Connect via i2c, default address #0 (A0-A2 not jumpered)
-TinyLiquidCrystal lcd(4);
+TinyLiquidCrystal lcd(0);
 
 // Parameters describing the current sense board
-const float GAIN=25.0;
-const float RESISTOR_VALUE=1.0;
-const int Imax = 200;
+const float GAIN=100.0;
+const float RESISTOR_VALUE=0.02;
+const int Imax = 2500;
 // Assumed reference voltage
 const float vMax = 5.0;
 
